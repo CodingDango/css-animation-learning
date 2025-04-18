@@ -16,20 +16,61 @@ html {
 body {
     background-color: #1b1b1b;
     min-height: 100vh;
-    padding: 40px 40px;
+    padding: 0px 40px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 40px;
-
 }
 
-header {
+header h1, h2 {
     text-align: center;
 }
 
-header h1 {
+header nav {
+    position: relative;
+    padding: 0 20px;
+    background-color: #111;
+    width: 100vw;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+}
+
+header nav a {
+    transition-duration: 0.25s;
+    transition-property: color;
+    font-size: 0.8rem;
+}
+
+header nav a:hover {
+    color: #ce6e2a;
+}
+
+#logo {
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    filter: invert(1);
+    background-position: center;
+}
+
+.headers {
+    margin-top: 70px;
+}
+
+.headers h1 {
     position: relative;
     font-size: 2.5rem;
     font-weight: 800;
@@ -37,7 +78,7 @@ header h1 {
     animation-duration: 1.5s;
 }
 
-header h2 {
+.headers h2 {
     position: relative;
     font-size: 2rem;
     font-weight: 700;
@@ -104,6 +145,7 @@ footer ul {
     list-style: none;
     flex-wrap: wrap;
 }
+
 
 footer a {
     transition-duration: 0.25s;
