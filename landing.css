@@ -36,6 +36,11 @@ header nav {
     height: 80px;
     top: 0px;
     left: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
 }
 
 header nav ul {
@@ -44,7 +49,7 @@ header nav ul {
     align-items: center;
     flex-direction: row;
     list-style: none;
-    gap: 50px;
+    gap: 40px;
 }
 
 header nav a {
@@ -59,18 +64,14 @@ header nav a:hover {
 
 #logo {
     position: relative;
-    top: 10px;
+    top: 5px;
     width: 60px;
     height: 60px;
     filter: invert(1);
     background-position: center;
 }
 
-.headers {
-    margin-top: 70px;
-}
-
-.headers h1 {
+#content h1 {
     position: relative;
     font-size: 2.5rem;
     font-weight: 800;
@@ -78,7 +79,7 @@ header nav a:hover {
     animation-duration: 1.5s;
 }
 
-.headers h2 {
+#content h2 {
     position: relative;
     font-size: 2rem;
     font-weight: 700;
